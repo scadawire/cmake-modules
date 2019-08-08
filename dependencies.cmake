@@ -1,4 +1,4 @@
-macro(install_dependencies)
+macro(find_dependencies)
 
 if(NOT EXISTS "${CMAKE_SOURCE_DIR}/dependencies.txt")
     message(FATAL_ERROR "Cannot find dependencies.txt")
