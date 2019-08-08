@@ -10,3 +10,4 @@ foreach(dependency ${depends})
     message(STATUS finding ${dependency})
 endforeach(dependency)
 
+endmacro(install_dependencies)
