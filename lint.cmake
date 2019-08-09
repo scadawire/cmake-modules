@@ -9,8 +9,9 @@ if(NOT TARGET lint)
     )
 
     if (NOT RUN_CLANG_TIDY)
-        message(WARNING "run-clang-tidy not found")
+        message(WARNING "run-clang-tidy not found - no lint target")
     else()
+        message(STATUS "run-clang-tidy found adding lint target")
         add_custom_target(lint
             COMMAND ${RUN_CLANG_TIDY} -checks='cppcoreguidelines-*,performance-*,readibility-*,modernize-*,misc-*,clang-analyzer-*,google-*'
             WORKING_DIRECTORY ${CMAKE_BINARY_DIR}

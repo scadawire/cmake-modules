@@ -19,4 +19,4 @@ foreach(dependency ${depends})
     endif()
 endforeach(dependency)
 
-endmacro(install_dependencies)
+endmacro(find_dependencies)
