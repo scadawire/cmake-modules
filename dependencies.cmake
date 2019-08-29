@@ -1,10 +1,10 @@
 macro(find_dependencies)
 
-if(NOT EXISTS "${CMAKE_SOURCE_DIR}/dependencies.txt")
+if(NOT EXISTS "${PROJECT_SOURCE_DIR}/dependencies.txt")
     message(FATAL_ERROR "Cannot find dependencies.txt")
 endif()
 
-file(READ "${CMAKE_SOURCE_DIR}/dependencies.txt" depends)
+file(READ "${PROJECT_SOURCE_DIR}/dependencies.txt" depends)
 string(REGEX REPLACE "\n" ";" depends "${depends}")
 foreach(dependency ${depends})
     set (cmd_list ${dependency})
