@@ -1,6 +1,6 @@
 
 # which is useful in case of packing only selected components instead of the whole thing
-set(CPACK_PACKAGE_DESCRIPTION_SUMMARY ${MANIFEST})
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY ${DESCRIPTION})
 set(CPACK_PACKAGE_VENDOR "SKAO")
 
 set(CPACK_VERBATIM_VARIABLES YES)
